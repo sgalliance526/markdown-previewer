@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap';
 import Preview from '../Preview/Preview';
+import './editor.css';
 
 class Editor extends Component {
     constructor(props){
@@ -18,7 +19,7 @@ class Editor extends Component {
 
     render() {
         return (
-            <div>
+            <div className="editor">
                 <FormGroup controlId="formControlsTextarea">
                     <FormControl componentClass="textarea" placeholder={this.state.textarea} onChange={this.handleChange}/>
                 </FormGroup>
